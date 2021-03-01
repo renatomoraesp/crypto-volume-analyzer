@@ -12,7 +12,7 @@ let fiveMinuteResult = [];
 let tenMinuteRanking = [];
 let tenMinuteResult = [];
 
-
+// test comment
 
 const tweeted = (err, data, response) => {
     if (err) console.log('Something went wrong\n', err);
