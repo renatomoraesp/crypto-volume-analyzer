@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 require('dotenv').config;
-const twit = require('./twit');
 const getRanking = require('./api');
 const twitter = require('./twit');
+var PORT = process.env.PORT || 3000
 
 let oneMinuteRanking = [];
 let oneMinuteResult = [];
@@ -18,8 +18,6 @@ const tweeted = (err, data, response) => {
     if (err) console.log('Something went wrong\n', err);
     else console.log('It worked!');
 }
-
-// twitter.post('statuses/update', tweet, tweeted);
 
 
 const createTweet = (pair, pumpIndex, priceDifference, minutes, s) => {
@@ -96,4 +94,4 @@ app.get('/results/10', async(req, res) => {
     res.json(tenMinuteResult);
 });
 
-app.listen(3000);
+app.listen(PORT);
