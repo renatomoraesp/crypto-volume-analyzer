@@ -22,9 +22,9 @@ const tweeted = (err, data, response) => {
 
 const createTweet = (pair, pumpIndex, priceDifference, minutes, s) => {
   if (priceDifference > 0) {
-    return 'PUMP ALERT: ' + '$' + pair.split('/')[0] +' / ' + '$' + pair.split('/')[1] + ' volume has increased by ' + pumpIndex + ' in the past ' + minutes + 'minute' + s + '. Price is up ' + priceDifference + '%.';
+    return '#Binance PUMP ALERT: ' + '$' + pair.split('/')[0] +' / ' + '$' + pair.split('/')[1] + ' volume has increased by ' + pumpIndex + ' in the past ' + minutes + 'minute' + s + '. Price is up ' + priceDifference + '%.';
   }
-  return 'DUMP ALERT: ' + '$' + pair.split('/')[0] + ' / ' + '$' + pair.split('/')[1] + ' volume has increased by ' + pumpIndex + ' in the past ' + minutes + 'minute' + s + '. Price is down ' + priceDifference + '%.';
+  return '#Binance DUMP ALERT: ' + '$' + pair.split('/')[0] + ' / ' + '$' + pair.split('/')[1] + ' volume has increased by ' + pumpIndex + ' in the past ' + minutes + 'minute' + s + '. Price is down ' + priceDifference + '%.';
 }
 
 
