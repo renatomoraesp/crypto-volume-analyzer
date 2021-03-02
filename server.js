@@ -16,7 +16,7 @@ let tenMinuteResult = [];
 
 const tweeted = (err, data, response) => {
     if (err) console.log('Something went wrong\n', err);
-    else console.log('It worked!');
+    else console.log('OMG it worked!');
 }
 
 
